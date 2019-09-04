@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190905 00:05:10.417" rpa="false">
+<suite id="s1" name="Test" source="C:\Users\koga\Desktop\code\robot_framework\test\test.robot">
+<test id="s1-t1" name="Googleでみんなのpython勉強会を検索するテスト">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>PATH</arg>
+<arg>C:\\Users\\koga\\Desktop\\code\\robot_framework\\testa/chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20190905 00:05:10.587" level="INFO">Environment variable 'PATH' set to value 'C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\koga\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\koga\AppData\Local\Programs\Python\Python37\;C:\Users\koga\AppData\Local\Microsoft\WindowsApps;;C:\Users\koga\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\koga\Desktop\code\robot_framework\testa/chromedriver.exe'.</msg>
+<status status="PASS" starttime="20190905 00:05:10.586" endtime="20190905 00:05:10.587"></status>
+</kw>
+<kw name="ChromeでGoogleを開く">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://google.co.jp</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20190905 00:05:10.588" level="INFO">Opening browser 'Chrome' to base url 'https://google.co.jp'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190905 00:05:10.589" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20190905 00:05:10.589" endtime="20190905 00:05:10.589"></status>
+</kw>
+<msg timestamp="20190905 00:05:10.591" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20190905 00:05:10.587" endtime="20190905 00:05:10.591"></status>
+</kw>
+<status status="FAIL" starttime="20190905 00:05:10.587" endtime="20190905 00:05:10.591"></status>
+</kw>
+<status status="FAIL" starttime="20190905 00:05:10.585" endtime="20190905 00:05:10.591" critical="yes">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<doc>Google検索テスト</doc>
+<status status="FAIL" starttime="20190905 00:05:10.418" endtime="20190905 00:05:10.595"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
