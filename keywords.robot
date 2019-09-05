@@ -6,10 +6,10 @@ Library    OperatingSystem
 *** Variables ***
 
 *** Keywords ***
-ChromeでGoogleを開く
-    Open Browser    https://google.co.jp    Chrome
+Chromeで${url}を開く
+    Open Browser    ${url}    Chrome
 
-みんなのPython勉強会を検索する
+${keyword}を検索する
     Input Text    name=q    みんなのPython勉強会
     Press Key    name=q    \\13
 
@@ -33,3 +33,7 @@ ChromeでGoogleを開く
 一番上のリンクをクリックする
     [Arguments]    ${link}
     Click Element    ${link}
+
+ページタイトルをコンソールに出力する
+    [Arguments]    ${title}
+    Log To Console    ${title}
